@@ -18,7 +18,7 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import ResponsiveAppBar from "../Components/Common/ResponsiveAppBar";
 import Hero from "../Components/Common/Hero";
 import locationImage from "../images/locationImage.png";
-import contactImage from "../images/contact.jpeg";
+import contactImage from "../images/contactHero.webp";
 
 const Contact = () => {
   const [openSnackbar, setOpenSnackbar] = useState(false);
@@ -57,7 +57,7 @@ const Contact = () => {
         message: message ? false : "Please enter your message",
       });
 
-      setOpenSnackbar(true); // Show snackbar with error message
+      setOpenSnackbar(true);
       setIsButtonClicked(false);
     }
   };
@@ -78,7 +78,7 @@ const Contact = () => {
       <div>
         <Hero
           title="Contact Us"
-          description="Get in touch with us"
+          description="Get in touch with us and full fill your buissness potential with us"
           backgroundImage={contactImage}
         />
       </div>

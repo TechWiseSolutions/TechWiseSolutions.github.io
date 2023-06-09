@@ -13,7 +13,7 @@ const Hero: FC<HeroProps> = ({ title, description, backgroundImage }) => {
       sx={{
         position: "relative",
         width: "100%",
-        height: "400px",
+        height: "500px",
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "100% 100%", // Updated backgroundSize
         backgroundPosition: "center",

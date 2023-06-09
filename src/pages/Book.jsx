@@ -16,47 +16,48 @@ import Hero from "../Components/Common/Hero";
 import dayjs from "dayjs";
 import { Chip } from "@mui/material";
 import BookingPopup from "../Components/Booking/BookingPopup.jsx";
+import bookingBg from "../images/tech-consulting-services-1.jpg";
 
 const services = [
   {
     id: 1,
-    name: "Service 1",
-    experts: ["Expert 1.1", "Expert 1.2"],
+    name: "IT Infrastructure",
+    experts: ["John Doe", "Jane Smith"],
   },
   {
     id: 2,
-    name: "Service 2",
-    experts: ["Expert 2.1", "Expert 2.2"],
+    name: "Buissness Intelligence",
+    experts: ["Alex Thompson", "Jacob Williams"],
   },
   {
     id: 3,
-    name: "Service 3",
-    experts: ["Expert 3.1", "Expert 3.2"],
+    name: "CyberSecurity",
+    experts: ["Emily Davis", "Mike Johnson"],
   },
 ];
 
 const expertAvailability = {
-  "Expert 1.1": ["10:00 AM", "11:00 AM", "12:00 PM"],
-  "Expert 1.2": ["09:00 AM", "10:00 AM", "11:00 AM"],
-  "Expert 2.1": ["02:00 PM", "03:00 PM", "04:00 PM"],
-  "Expert 2.2": ["03:00 PM", "04:00 PM", "05:00 PM"],
-  "Expert 3.1": ["09:00 AM", "10:00 AM", "11:00 AM"],
-  "Expert 3.2": ["01:00 PM", "02:00 PM", "03:00 PM"],
+  "John Doe": ["10:00 AM", "11:00 AM", "12:00 PM"],
+  "Jane Smith": ["09:00 AM", "10:00 AM", "11:00 AM"],
+  "Alex Thompson": ["02:00 PM", "03:00 PM", "04:00 PM"],
+  "Jacob Williams": ["03:00 PM", "04:00 PM", "05:00 PM"],
+  "Emily Davis": ["09:00 AM", "10:00 AM", "11:00 AM"],
+  "Mike Johnson": ["01:00 PM", "02:00 PM", "03:00 PM"],
 };
 
 const expertUnavailableDates = {
-  "Expert 1.1": [
+  "John Doe": [
     "2023-06-10",
     "2023-06-15",
     "2023-06-20",
     "2023-07-05",
     "2023-07-10",
   ],
-  "Expert 1.2": ["2023-06-12", "2023-06-19", "2023-07-05", "2023-07-20"],
-  "Expert 2.1": ["2023-06-11", "2023-06-17", "2023-07-01", "2023-07-15"],
-  "Expert 2.2": ["2023-06-14", "2023-06-19", "2023-07-04", "2023-07-12"],
-  "Expert 3.1": ["2023-06-09", "2023-06-16", "2023-07-03", "2023-07-08"],
-  "Expert 3.2": ["2023-06-13", "2023-06-21", "2023-07-06", "2023-07-18"],
+  "Jane Smith": ["2023-06-12", "2023-06-19", "2023-07-05", "2023-07-20"],
+  "Alex Thompson": ["2023-06-11", "2023-06-17", "2023-07-01", "2023-07-15"],
+  "Jacob Williams": ["2023-06-14", "2023-06-19", "2023-07-04", "2023-07-12"],
+  "Emily Davis": ["2023-06-09", "2023-06-16", "2023-07-03", "2023-07-08"],
+  "Mike Johnson": ["2023-06-13", "2023-06-21", "2023-07-06", "2023-07-18"],
 };
 
 const Book = () => {
@@ -118,7 +119,7 @@ const Book = () => {
         <Hero
           title="Book Now"
           description="Book an appointment with us today!"
-          backgroundImage={"https://source.unsplash.com/random"}
+          backgroundImage={bookingBg}
         />
       </div>
       <Box
@@ -172,7 +173,7 @@ const Book = () => {
                     value={selectedService}
                     onChange={(e) => setSelectedService(e.target.value)}
                     SelectProps={{
-                      native: true, // Add this line
+                      native: true,
                     }}
                   >
                     <option value="" disabled>
@@ -192,7 +193,7 @@ const Book = () => {
                     value={selectedExpert}
                     onChange={(e) => handleExpertChange(e.target.value)}
                     SelectProps={{
-                      native: true, // Add this line
+                      native: true,
                     }}
                     sx={{ marginTop: "20px" }}
                   >
@@ -283,6 +284,7 @@ const Book = () => {
                       time={selectedTime}
                       date={selectedDate}
                       closePopup={closePopup}
+                      show={openPopup}
                     />
                   )}
                 </div>

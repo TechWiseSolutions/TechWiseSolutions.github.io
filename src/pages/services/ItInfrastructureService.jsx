@@ -1,29 +1,40 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
 import ResponsiveAppBar from "../../Components/Common/ResponsiveAppBar";
 import Hero from "../../Components/Common/Hero";
+import {
+  Container,
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  Divider,
+} from "@mui/material";
+import tier1 from "../../images/BasicIT.jpg";
+import tier2 from "../../images/advacnedIT.jpg";
+import tier3 from "../../images/PremiumIT.jpg";
+import InfraBg from "../../images/InfraBG.jpg";
 
 const tiers = [
   {
-    title: "Tier 1",
-    price: "$99/month",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla consectetur arcu eget faucibus.",
-    image: "https://picsum.photos/200/300", // Replace with the path to your tier 1 image
-  },
-  {
-    title: "Tier 2",
+    title: "Basic Tier",
     price: "$199/month",
     description:
-      "Sed tincidunt ultricies arcu ut tincidunt. Integer at leo scelerisque, venenatis tellus eu, placerat purus.",
-    image: "https://picsum.photos/200/300", // Replace with the path to your tier 2 image
+      "Ideal for small businesses or startups that require essential IT infrastructure setup, including network connectivity, basic server configuration, and device management.",
+    image: tier1,
   },
   {
-    title: "Tier 3",
-    price: "$299/month",
+    title: "Advanced Tier",
+    price: "$499/month",
     description:
-      "Fusce rhoncus leo id turpis blandit, non commodo elit aliquam. Curabitur fermentum leo eu congue semper.",
-    image: "https://picsum.photos/200/300", // Replace with the path to your tier 3 image
+      "Suitable for medium-sized businesses looking for an expanded IT infrastructure solution, including advanced network security, virtualization, cloud integration, and backup systems.",
+    image: tier2,
+  },
+  {
+    title: "Premium Tier",
+    price: "$899/month",
+    description:
+      "Designed for large enterprises requiring comprehensive IT infrastructure services, such as scalable server clusters, disaster recovery planning, 24/7 monitoring, and advanced cybersecurity measures.",
+    image: tier3,
   },
 ];
 
@@ -33,23 +44,37 @@ const InfrastructureService = () => {
       <ResponsiveAppBar />
       <Hero
         title="IT Infrastructure Service"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        backgroundImage=""
+        description="We offer a wide range of IT infrastructure services to help you build a robust and secure IT environment for your business"
+        backgroundImage={InfraBg}
       />
-      <Container className="mt-4">
+      <Container sx={{ mt: 4 }}>
         {tiers.map((tier, index) => (
-          <Row key={tier.title} className="mb-4">
-            <Col md={6} className="order-md-1 order-2">
-              <img src={tier.image} alt={tier.title} className="img-fluid" />
-            </Col>
-            <Col md={6} className="order-md-2 order-1">
-              <div>
-                <h5 className="mb-3">{tier.title}</h5>
-                <h6 className="mb-3">{tier.price}</h6>
-                <p>{tier.description}</p>
-              </div>
-            </Col>
-          </Row>
+          <div key={tier.title}>
+            <Grid
+              container
+              spacing={4}
+              direction={index % 2 === 0 ? "row" : "row-reverse"}
+              sx={{ alignItems: "center", mb: 4 }}
+            >
+              <Grid item xs={12} md={6}>
+                <img
+                  src={tier.image}
+                  alt={tier.title}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography variant="h5" component="h2" gutterBottom>
+                  {tier.title}
+                </Typography>
+                <Typography variant="h6" component="h3" gutterBottom>
+                  {tier.price}
+                </Typography>
+                <Typography variant="body1">{tier.description}</Typography>
+              </Grid>
+            </Grid>
+            <Divider sx={{ my: 4 }} />
+          </div>
         ))}
       </Container>
     </div>
