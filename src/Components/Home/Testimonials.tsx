@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import testimonial1 from "../../images/testimonial1.jpeg";
+import testimonial2 from "../../images/testimonial2.jpg";
 
 export default function Testimonials() {
   return (
@@ -22,23 +24,33 @@ export default function Testimonials() {
                 padding: "20px",
                 borderRadius: "8px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                height: "100%", // Set full height for the container
+                display: "flex", // Ensure flexbox layout
+                flexDirection: "column", // Stack elements vertically
               }}
             >
-              {/* Testimonial content */}
-              <img src="https://via.placeholder.com/150" alt="Avatar" />
+              <img
+                src={testimonial1}
+                alt="Avatar"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover", // Ensure the image covers the entire container
+                  marginBottom: "20px", // Add some bottom margin to separate the image from the text
+                }}
+              />
 
               <Typography variant="body1" color="white" gutterBottom>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                aliquam tincidunt odio id tristique. Nulla id lacus consequat,
-                commodo urna non, laoreet erat. Fusce eu volutpat sem, at
-                eleifend mi. Curabitur vitae eros nunc. Phasellus ac mi feugiat,
-                fermentum lacus id, placerat mi."
+                "TechWise Solutions has been instrumental in transforming our
+                business operations. Their expertise in technology consulting
+                and solutions has helped us streamline processes and improve
+                efficiency. We highly recommend their services!"
               </Typography>
               <Typography variant="h6" color="white">
-                John Doe
+                Felix Smith
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                CEO, Example Company
+                CEO, Auditte.io
               </Typography>
             </Box>
           </Grid>
@@ -49,22 +61,32 @@ export default function Testimonials() {
                 padding: "20px",
                 borderRadius: "8px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                height: "100%", // Set full height for the container
+                display: "flex", // Ensure flexbox layout
+                flexDirection: "column", // Stack elements vertically
               }}
             >
-              {/* Testimonial content */}
-              <img src="https://via.placeholder.com/150" alt="Avatar" />
+              <img
+                src={testimonial2}
+                alt="Avatar"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover", // Ensure the image covers the entire container
+                  marginBottom: "20px", // Add some bottom margin to separate the image from the text
+                }}
+              />
               <Typography variant="body1" color="white" gutterBottom>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                aliquam tincidunt odio id tristique. Nulla id lacus consequat,
-                commodo urna non, laoreet erat. Fusce eu volutpat sem, at
-                eleifend mi. Curabitur vitae eros nunc. Phasellus ac mi feugiat,
-                fermentum lacus id, placerat mi."
+                "TechWise Solutions has exceeded our expectations with their
+                innovative solutions and exceptional customer service. Their
+                team is highly skilled and dedicated. We are grateful for their
+                support in driving our business growth."
               </Typography>
               <Typography variant="h6" color="white">
-                Jane Smith
+                Lauren Pecker
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                CTO, Example Company
+                CTO, Ritalio
               </Typography>
             </Box>
           </Grid>

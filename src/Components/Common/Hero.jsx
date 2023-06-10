@@ -1,13 +1,7 @@
 import React, { FC } from "react";
 import { Box, Typography } from "@mui/material";
 
-interface HeroProps {
-  title: string;
-  description: string;
-  backgroundImage: string;
-}
-
-const Hero: FC<HeroProps> = ({ title, description, backgroundImage }) => {
+const Hero = ({ title, description, backgroundImage }) => {
   return (
     <Box
       sx={{

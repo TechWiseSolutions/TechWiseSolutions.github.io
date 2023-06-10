@@ -35,29 +35,36 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" sx={{ backgroundColor: "#003269" }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
-            <AdbIcon sx={{ mr: 4 }} />
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "Times New Roman",
-                fontWeight: 700,
-                letterSpacing: ".2rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              TechWise Solutions
-            </Typography>
-          </Box>
-
+      <Toolbar disableGutters>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            flexGrow: 1,
+            justifyContent: "flex-start",
+            marginLeft: "20px",
+          }}
+        >
+          <AdbIcon sx={{ mr: 4 }} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "Times New Roman",
+              fontWeight: 700,
+              letterSpacing: ".2rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            TechWise Solutions
+          </Typography>
+        </Box>
+        <Box sx={{ display: "flex", marginRight: "10px" }}>
           {pages.map((page, index) => {
             const isActive = activePage === page;
 
@@ -68,9 +75,12 @@ function ResponsiveAppBar() {
                     onClick={handleServicesClick}
                     sx={{
                       my: 2,
-                      color: isActive ? "white" : "inherit",
+                      color: isActive ? "black" : "white",
                       display: "flex",
                       alignItems: "center",
+                      "&:hover": {
+                        backgroundColor: "#B59410",
+                      },
                     }}
                     onMouseEnter={() => setActivePage(page)}
                     onMouseLeave={() => setActivePage("")}
@@ -144,8 +154,11 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: isActive ? "white" : "inherit",
+                  color: isActive ? "black" : "white",
                   display: "block",
+                  "&:hover": {
+                    backgroundColor: "#B59410",
+                  },
                 }}
                 onMouseEnter={() => setActivePage(page)}
                 onMouseLeave={() => setActivePage("")}
@@ -157,8 +170,8 @@ function ResponsiveAppBar() {
               </Button>
             );
           })}
-        </Toolbar>
-      </Container>
+        </Box>
+      </Toolbar>
     </AppBar>
   );
 }

@@ -14,14 +14,35 @@ export default function Header() {
     "primary-action": "Book Now",
     pattern: hero,
   };
+
   return (
     <section
-      className={"hero hero-bg"}
-      style={{ backgroundImage: `url("${content["pattern"]}")` }}
+      className="hero"
+      style={{
+        position: "relative",
+        textAlign: "center",
+        color: "white",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        padding: "100px 0",
+        backgroundImage: `url("${content["pattern"]}")`,
+      }}
     >
       <Container maxWidth="md">
-        <Box textAlign="center" color="common.white">
-          <Typography variant="h2" component="h2" gutterBottom={true}>
+        <Box
+          textAlign="center"
+          sx={{
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            padding: "20px",
+            maxWidth: "600px",
+            textAlign: "center",
+            margin: "0 auto",
+            position: "relative",
+            top: "30%",
+          }}
+        >
+          <Typography variant="h2" component="h2" gutterBottom>
             <Typography
               color="textSecondary"
               variant="h2"
@@ -37,9 +58,9 @@ export default function Header() {
           <Container maxWidth="sm">
             <Typography
               variant="subtitle1"
-              color="textSecondary"
-              paragraph={true}
-              className={"hero__subtitle"}
+              color="white"
+              paragraph
+              style={{ marginTop: "24px" }}
             >
               {content["description"]}
             </Typography>
@@ -47,8 +68,10 @@ export default function Header() {
           <Box mt={3}>
             <Button
               variant="contained"
-              className={"hero__btn"}
-              style={{ backgroundColor: "#B59410" }}
+              style={{
+                backgroundColor: "#B59410",
+                color: "white",
+              }}
             >
               {content["primary-action"]}
             </Button>

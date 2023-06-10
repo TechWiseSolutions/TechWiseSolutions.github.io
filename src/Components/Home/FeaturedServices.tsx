@@ -37,19 +37,20 @@ export default function FeaturedServices() {
         </Box>
         <Grid container spacing={2} sx={{ marginTop: "40px" }}>
           <Grid item xs={12} md={6}>
-            <Card>
+            <Card sx={{ height: "100%" }}>
               <img
                 src={service_1_img}
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "100%", height: "60%" }}
               />
               <CardContent>
                 <Typography variant="h5" gutterBottom>
                   IT Infrastructure Services
                 </Typography>
                 <Typography variant="body1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  tristique, urna ut tincidunt malesuada, odio metus
-                  sollicitudin mauris, ac dictum leo risus ut justo.
+                  Our IT Infrastructure Services provide comprehensive solutions
+                  for your organization's technology needs. We offer network
+                  design and implementation, server setup and maintenance, cloud
+                  computing solutions, and IT support services.
                 </Typography>
               </CardContent>
             </Card>
@@ -59,16 +60,17 @@ export default function FeaturedServices() {
               <img
                 src={service_2_img}
                 alt="Service Image 2"
-                style={{ width: "100%", height: "67%" }}
+                style={{ width: "100%", height: "60%" }}
               />
               <CardContent>
                 <Typography variant="h5" gutterBottom>
-                  Service 2
+                  CyberSecurity
                 </Typography>
                 <Typography variant="body1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  tristique, urna ut tincidunt malesuada, odio metus
-                  sollicitudin mauris, ac dictum leo risus ut justo.
+                  Protect your business from cyber threats with our
+                  CyberSecurity services. We offer comprehensive solutions to
+                  safeguard your digital assets and data from unauthorized
+                  access, malware, and other cyber attacks.
                 </Typography>
               </CardContent>
             </Card>

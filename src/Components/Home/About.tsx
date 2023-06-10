@@ -13,8 +13,8 @@ export default function About() {
   return (
     <section
       style={{
-        paddingTop: "40px",
-        paddingBottom: "40px",
+        paddingTop: "60px",
+        paddingBottom: "60px",
         backgroundColor: "#003269",
       }}
     >
@@ -27,7 +27,7 @@ export default function About() {
               style={{
                 color: "white",
                 fontWeight: "bold",
-                marginBottom: "20px",
+                marginBottom: "30px",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
               }}
             >
@@ -62,25 +62,22 @@ export default function About() {
                 variant="body1"
                 style={{ color: "#333333", marginBottom: "20px" }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                tristique, urna ut tincidunt malesuada, odio metus sollicitudin
-                mauris, ac dictum leo risus ut justo.
+                TechWise Solutions is a leading technology company dedicated to
+                providing innovative solutions for businesses. With our
+                expertise in IT infrastructure, business intelligence, and
+                cybersecurity, we help organizations optimize their operations,
+                enhance their decision-making processes, and secure their
+                digital assets.
               </Typography>
               <Typography
                 variant="body1"
                 style={{ color: "#333333", marginBottom: "20px" }}
               >
-                Mauris eu enim a nibh cursus feugiat non vitae ex. Fusce
-                suscipit, arcu sit amet vulputate posuere, massa neque dignissim
-                leo, sed auctor risus metus a ante.
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{ color: "#333333", marginBottom: "20px" }}
-              >
-                Aliquam cursus, odio sed pulvinar malesuada, orci elit imperdiet
-                sem, sit amet molestie sapien arcu in libero. Phasellus euismod
-                aliquam tincidunt.
+                Our team of experts is passionate about leveraging technology to
+                drive success for our clients. We combine technical excellence
+                with a deep understanding of business needs to deliver tailored
+                solutions that empower organizations to achieve their goals and
+                stay ahead in today's competitive landscape.
               </Typography>
             </Card>
           </Grid>
