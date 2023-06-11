@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.ba80b019.js",
+    "static/js/787.7492a7f5.chunk.js": "/static/js/787.7492a7f5.chunk.js",
+    "static/media/expertsHero.jpg": "/static/media/expertsHero.b4bdc4db026dfcbc4d7c.jpg",
+    "static/media/123.jpg": "/static/media/123.cf0b36224fe39248211a.jpg",
+    "static/media/PremiumIT.jpg": "/static/media/PremiumIT.a3db32865bb0743fa49c.jpg",
+    "static/media/ppl1.jpg": "/static/media/ppl1.8efa38b1e9cf711814f1.jpg",
+    "static/media/InfraBG.jpg": "/static/media/InfraBG.84fbddf58ae55d4ef8dc.jpg",
+    "static/media/ppl2.jpg": "/static/media/ppl2.5b3575b6b164ddd6cc60.jpg",
+    "static/media/ppl6.jpg": "/static/media/ppl6.3f476a7adab0a0d58149.jpg",
+    "static/media/CybersecurityBg.jpg": "/static/media/CybersecurityBg.b36f03de7164faa0db5a.jpg",
+    "static/media/BIImage1.jpg": "/static/media/BIImage1.44827599915284ecff23.jpg",
+    "static/media/BIImage2.jpg": "/static/media/BIImage2.5c9a1e48ff12f6fc17f7.jpg",
+    "static/media/CybersecurityImage1.jpg": "/static/media/CybersecurityImage1.620028168a775ecbb8ad.jpg",
+    "static/media/ppl4.jpg": "/static/media/ppl4.de1ea6630afadcee4938.jpg",
+    "static/media/testimonial2.jpg": "/static/media/testimonial2.f932b8713645cfff95dc.jpg",
+    "static/media/advacnedIT.jpg": "/static/media/advacnedIT.c78e362ebfb58ee083c3.jpg",
+    "static/media/CybersecurityImage2.jpg": "/static/media/CybersecurityImage2.f1596468731466d7064c.jpg",
+    "static/media/ppl5.jpg": "/static/media/ppl5.eb461926588a7a9eddc7.jpg",
+    "static/media/BIImage3.jpg": "/static/media/BIImage3.0624bf3275a33e60cedb.jpg",
+    "static/media/ppl3.jpg": "/static/media/ppl3.c633c1cb7e1c0df06298.jpg",
+    "static/media/about-transformed.jpeg": "/static/media/about-transformed.b044131a789190e14c95.jpeg",
+    "static/media/BasicIT.jpg": "/static/media/BasicIT.9bf687cb38f2e361448a.jpg",
+    "static/media/testimonial1.jpeg": "/static/media/testimonial1.b20217e4da32ae8190c4.jpeg",
+    "static/media/CybersecurityImage3.jpg": "/static/media/CybersecurityImage3.b87ab2c7ddbe7f169dcd.jpg",
+    "static/media/featured_serv_background.jpg": "/static/media/featured_serv_background.672a86b2771b7de16d68.jpg",
+    "static/media/it-infrastructure-services-1.png": "/static/media/it-infrastructure-services-1.c9970876977cb0e08587.png",
+    "static/media/locationImage.png": "/static/media/locationImage.699517a9ccc61c3d3ff5.png",
+    "static/media/tech-consulting-services-1.jpg": "/static/media/tech-consulting-services-1.87dc1bcb468a4e8fc33a.jpg",
+    "static/media/cybersecurity-service.webp": "/static/media/cybersecurity-service.05f0990ba0e07e7308f8.webp",
+    "static/media/contactHero.webp": "/static/media/contactHero.70ded407dce16dd73853.webp",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.ba80b019.js.map": "/static/js/main.ba80b019.js.map",
+    "787.7492a7f5.chunk.js.map": "/static/js/787.7492a7f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ba80b019.js"
+  ]
+}
