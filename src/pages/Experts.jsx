@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Grid } from "@mui/material";
+// import { Container, Grid } from "@mui/material";
+import { Container, Row, Col } from "react-bootstrap";
+
 import ExpertCard from "../Components/Experts/Expert";
 import ResponsiveAppBar from "../Components/Common/ResponsiveAppBar";
 import Hero from "../Components/Common/Hero";
@@ -10,6 +12,7 @@ import expert2 from "../images/ppl4.jpg";
 import expert4 from "../images/ppl1.jpg";
 import expert5 from "../images/ppl5.jpg";
 import expert6 from "../images/ppl6.jpg";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const experts = [
   {
@@ -62,7 +65,7 @@ const experts = [
   },
 ];
 
-const ExpertsPage = () => {
+const Experts = () => {
   return (
     <div style={{ backgroundColor: "#003269" }}>
       <div className="nav">
@@ -75,14 +78,10 @@ const ExpertsPage = () => {
           backgroundImage={expertHero}
         />
       </div>
-      <Container maxWidth="xl" style={{ marginTop: "20px" }}>
-        <Grid
-          container
-          spacing={{ xs: 2, sm: 2, md: 3, lg: 4, xl: 6 }}
-          justifyContent="center"
-        >
+      <Container fluid style={{ marginTop: "20px" }}>
+        <Row className="justify-content-center">
           {experts.map((expert, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Col xs={12} sm={6} md={4} key={index} className="my-2">
               <ExpertCard
                 imageSrc={expert.imageSrc}
                 alt={expert.alt}
@@ -91,12 +90,12 @@ const ExpertsPage = () => {
                 description={expert.description}
                 bookNowLink="/book"
               />
-            </Grid>
+            </Col>
           ))}
-        </Grid>
+        </Row>
       </Container>
     </div>
   );
 };
 
-export default ExpertsPage;
+export default Experts;

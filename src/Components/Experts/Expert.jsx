@@ -1,11 +1,12 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Button,
-  CardMedia,
-} from "@mui/material";
+// import {
+//   Card,
+//   CardContent,
+//   Typography,
+//   Button,
+//   CardMedia,
+// } from "@mui/material";
+import { Card, Button } from "react-bootstrap";
 
 const ExpertCard = ({
   imageSrc,
@@ -21,16 +22,16 @@ const ExpertCard = ({
         border: "1px solid #ccc",
         borderRadius: "8px",
         height: "100%",
-        width: "100%",
+        width: "90%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        maxWidth: "2500px", // Set the maximum width of the card
+        maxWidth: "1500px",
         margin: "0 auto",
       }}
     >
-      <CardMedia
-        component="img"
+      <Card.Img
+        variant="top"
         src={imageSrc}
         alt={alt}
         style={{
@@ -41,29 +42,22 @@ const ExpertCard = ({
           borderTopRightRadius: "8px",
         }}
       />
-      <CardContent>
-        <Typography variant="h5" component="h2" gutterBottom>
-          {expertName}
-        </Typography>
-        <Typography variant="subtitle1" gutterBottom>
+      <Card.Body>
+        <Card.Title>{expertName}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">
           {specialization}
-        </Typography>
-        <Typography variant="body2" color="textSecondary" gutterBottom>
-          {description}
-        </Typography>
-      </CardContent>
+        </Card.Subtitle>
+        <Card.Text>{description}</Card.Text>
+      </Card.Body>
       <div style={{ padding: "8px", textAlign: "center" }}>
         <Button
           href={bookNowLink}
-          variant="contained"
-          sx={{
+          variant="custom"
+          style={{
             borderRadius: "4px",
             textTransform: "none",
             width: "100%",
             backgroundColor: "#B59410",
-            ":hover": {
-              backgroundColor: "#B58400",
-            },
           }}
         >
           Book Now

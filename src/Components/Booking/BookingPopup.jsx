@@ -1,6 +1,10 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+<<<<<<< HEAD
+=======
+import "bootstrap/dist/css/bootstrap.min.css";
+>>>>>>> f88669a4d5f447a165999aa85e46f2d8c2d19d1f
 
 const BookingPopup = ({
   fullName,

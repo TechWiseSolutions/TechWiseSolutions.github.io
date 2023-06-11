@@ -111,7 +111,7 @@ const Book = () => {
   }, [selectedExpert]);
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#003269" }}>
       <div>
         <ResponsiveAppBar />
       </div>
@@ -126,9 +126,9 @@ const Book = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
-          height: "70vh",
-          backgroundColor: "#003269",
+          alignItems: "flex-start",
+          flexDirection: "column",
+          marginTop: "20px",
         }}
       >
         <Grid container spacing={3} justifyContent="center">
